@@ -32,6 +32,9 @@ public class Producto implements Serializable {
 
 	@Transient // No es persistente no esta mapeado en la BBDD
 	private Integer port;
+	
+	@Transient // No es persistente no esta mapeado en la BBDD
+	private String instancia; 
 
 	public Long getId() {
 		return id;
@@ -72,5 +75,15 @@ public class Producto implements Serializable {
 	public void setPort(Integer port) {
 		this.port = port;
 	}
+
+	public String getInstancia() {
+		return instancia;
+	}
+
+	public void setInstancia(String instancia) {
+		this.instancia = instancia;
+	}
+	
+	
 
 }
